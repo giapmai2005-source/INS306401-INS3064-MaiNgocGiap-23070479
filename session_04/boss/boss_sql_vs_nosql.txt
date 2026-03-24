@@ -1,0 +1,13 @@
+﻿BOSS FIGHT: SQL vs NoSQL Decision
+Scenario 1: Banking / Financial Transaction System
+Recommended Database: SQL (Relational Database)
+Justification:
+A financial system requires strong data consistency and reliability. SQL databases support ACID transactions (Atomicity, Consistency, Isolation, Durability), which ensure that financial transactions such as money transfers are processed correctly and safely. If a transaction fails, it can be rolled back to prevent data corruption. In addition, financial systems use structured data with clear relationships between tables such as accounts, customers, and transactions. SQL databases also support foreign keys and strong constraints, helping maintain data integrity.
+Conclusion:
+A relational SQL database such as MySQL or PostgreSQL is the best choice for banking systems because accuracy and transaction integrity are critical.
+Scenario 2: Large Social Media Platform
+Recommended Database: NoSQL (Document Database)
+Justification:
+Social media platforms must handle extremely large amounts of data and user activity, including posts, comments, likes, images, and videos. NoSQL databases are designed to scale horizontally across many servers, allowing the system to support millions of users simultaneously. They also support flexible schemas, which means the structure of data can change easily as new features are added. High write performance is another advantage, making NoSQL suitable for applications that generate a large number of updates every second.
+Conclusion:
+A NoSQL database such as MongoDB or Cassandra is more suitable for social media platforms because it offers high scalability, flexibility, and performance under heavy workloads.
